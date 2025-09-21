@@ -1,0 +1,376 @@
+{
+  "facultyCoordinators": [
+    {
+      "id": 1,
+      "name": "Mr. Aniket Deo",
+      "branch": "AI&DS",
+      "photo": "aniket.jpg",
+      "linkedin": "https://linkedin.com/in/aniket-deo"
+    },
+    {
+      "id": 2,
+      "name": "Mr. Vinayak Bachal",
+      "branch": "CIVIL",
+      "photo": "vinayak.jpg",
+      "linkedin": "https://linkedin.com/in/priya-sharma"
+    },
+    {
+      "id": 3,
+      "name": "Ms. Apeksha Waghmare",
+      "branch": "IT",
+      "photo": "apeksha.jpg",
+      "linkedin": "https://linkedin.com/in/amit-patel"
+    },
+    {
+      "id": 4,
+      "name": "Ms. Seema Nagrani",
+      "branch": "MECH",
+      "photo": "seema.jpg",
+      "linkedin": "https://linkedin.com/in/sneha-gupta"
+    },
+    {
+      "id": 5,
+      "name": "Mr. Ashish Dwivedi",
+      "branch": "COMPS",
+      "photo": "ashish.jpg",
+      "linkedin": "https://linkedin.com/in/rajesh-kumar"
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Harsha Sanap",
+      "branch": "E&CS",
+      "photo": "harsha.jpg",
+      "linkedin": "https://linkedin.com/in/meera-joshi"
+    },
+    {
+      "id": 7,
+      "name": "Ms. Usha Gupta",
+      "branch": "IOT",
+      "photo": "usha.jpg",
+      "linkedin": "http://linkedin.com/in/usha-gupta-8a8b3a279"
+    },
+    {
+      "id": 8,
+      "name": "Mr. Siddhesh Mane",
+      "branch": "MME",
+      "photo": "siddesh.jpg",
+      "linkedin": "https://linkedin.com/in/kavita-singh"
+    },
+    {
+      "id": 9,
+      "name": "Mrs. Shital Pazare",
+      "branch": "AI&ML",
+      "photo": "shital.jpg",
+      "linkedin": "https://linkedin.com/in/anil-verma"
+    },
+    {
+      "id": 10,
+      "name": "Dr. Nidhi Tiwari",
+      "branch": "ES&H",
+      "photo": "nidhit.png",
+      "linkedin": "https://linkedin.com/in/sunita-nair"
+    },
+    {
+      "id": 11,
+      "name": "Dr. Rajesh Khanna",
+      "branch": "EXTC",
+      "photo": "/placeholder.svg?height=300&width=300",
+      "linkedin": "https://linkedin.com/in/rajesh-khanna"
+    },
+    {
+      "id": 12,
+      "name": "Ms. Priya Deshmukh",
+      "branch": "TEXTILE",
+      "photo": "/placeholder.svg?height=300&width=300",
+      "linkedin": "https://linkedin.com/in/priya-deshmukh"
+    },
+    {
+      "id": 13,
+      "name": "Chhavi Birla",
+    
+      "photo": "birla.jpg",
+      "linkedin": "https://linkedin.com/in/sandeep-joshi"
+    },
+    {
+      "id": 14,
+      "name": "Dr. Ranjita Asati",
+    
+      "photo": "asati.jpg",
+      "linkedin": "https://linkedin.com/in/chhavi-birla"
+    }
+  ],
+  "coreTeam": [
+    {
+      "id": 1,
+      "name": "Ayush Pardeshi",
+      "role": "CEO",
+      "photo": "Ayush.jpg",
+      "linkedin": "https://linkedin.com/in/ayush-pardeshi",
+      "branch": "E&CS",
+      "year": "TE"
+    },
+    {
+      "id": 2,
+      "name": "Ahana Kulkarni",
+      "role": "CTO",
+      "photo": "Ahana.png",
+      "linkedin": "https://linkedin.com/in/ahana-kulkarni",
+      "branch": "AI&DS",
+      "year": "TE"
+    },
+    {
+      "id": 3,
+      "name": "Hredey Chaand",
+      "role": "CMO",
+      "photo": "Hredey.jpg",
+      "linkedin": "https://www.linkedin.com/in/hredey-chaand-b10787351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "branch": "COMPS",
+      "year": "SE"
+    },
+    {
+      "id": 4,
+      "name": "Bhummi Girnara",
+      "role": "COO",
+      "photo": "Bhummi.jpg",
+      "linkedin": "https://linkedin.com/in/bhummi-girnara",
+      "branch": "AI&DS",
+      "year": "TE"
+    },
+    {
+      "id": 5,
+      "name": "Yash Khatri",
+      "role": "Chairperson",
+      "photo": "khatri.jpg",
+      "linkedin": "https://www.linkedin.com/in/yash-khatri-944165375/",
+      "branch": "COMPS",
+      "year": "SE"
+    },
+    {
+      "id": 6,
+      "name": "Anushka Yadav",
+      "role": "Vice Chairperson",
+      "photo": "anushka.jpg",
+      "linkedin": "https://www.linkedin.com/in/anushka-m-yadav/",
+      "branch": "COMPS",
+      "year": "TE"
+    },
+    {
+      "id": 7,
+      "name": "Krish Jain",
+      "role": "Outreach Head",
+      "photo": "krish.jpg",
+      "linkedin": "https://www.linkedin.com/in/krish-jain-445aa332a",
+      "branch": "COMPS",
+      "year": "SE"
+    },
+    {
+      "id": 8,
+      "name": "Raj Mane",
+      "role": "Teachnical Head",
+      "photo": "Raj Mane.jpg",
+      "linkedin": "https://linkedin.com/in/kavya-singh",
+      "branch": "COMP",
+      "year": "SE"
+    },
+    {
+      "id": 9,
+      "name": "Nikita Tiwari",
+      "role": "Creative Head",
+      "photo": "nikita.jpg",
+      "linkedin": "https://linkedin.com/in/rohit-jain",
+      "branch": "Computer Engineering",
+      "year": "Second Year"
+    },
+    {
+      "id": 10,
+      "name": "Rashi Bedse",
+      "role": "Social Media Manager",
+      "photo": "rashi.jpg",
+      "linkedin": "https://linkedin.com/in/ananya-reddy",
+      "branch": "COMPS",
+      "year": "TE"
+    },
+    {
+      "id": 11,
+      "name": "Sayyam Lohade",
+      "role": "Secretary",
+      "photo": "sayyam.jpg",
+      "linkedin": "https://linkedin.com/in/vikram-agarwal",
+      "branch": "COMPS",
+      "year": "SE"
+    },
+    {
+      "id": 12,
+      "name": "Nidhi Shukla",
+      "role": "Event Manager",
+      "photo": "nidhi.jpg",
+      "linkedin": "https://www.linkedin.com/in/nidhi-shukla-36151a329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "branch": "AI&ML",
+      "year": "SE"
+    },
+    {
+      "id": 13,
+      "name": "Tanvi Jabare",
+      "role": "Publication Head",
+      "photo": "Tanvi.jpg",
+      "linkedin": "https://linkedin.com/in/siddharth-sharma",
+      "branch": "E&CS",
+      "year": "SE"
+    },
+    {
+      "id": 14,
+      "name": "Mishti Dhiman",
+      "role": "PR Head",
+      "photo": "/placeholder.svg?height=300&width=300",
+      "linkedin": "https://linkedin.com/in/priyanka-gupta",
+      "branch": "COMPS",
+      "year": "SE"
+    },
+    {
+      "id": 15,
+      "name": "Yash Yadav",
+      "role": "Sponsorship Head",
+      "photo": "yash.jpg",
+      "linkedin": "https://linkedin.com/in/nikhil-patil",
+      "branch": "AI&ML",
+      "year": "SE"
+    }
+  ],
+  "juniorCoreTeam": [
+    {
+      "id": 1,
+      "name": "Krish Choudhary",
+      "role": "Junior Core - Technical",
+      "photo": "krishc.jpg",
+      "linkedin": "https://www.linkedin.com/in/nikita-tiwari-73a90330b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "branch": "Computer Engineering",
+      "year": "Second Year"
+    },
+    {
+      "id": 2,
+      "name": "Priyanshi Negi",
+      "role": "Junior Core - Technical",
+      "photo": "priyanshi.jpg",
+      "linkedin": "https://linkedin.com/in/shreya-kapoor",
+      "branch": "E&CS",
+      "year": "Second Year"
+    },
+    {
+      "id": 3,
+      "name": "Shaleen Singh",
+      "role": "Junior Core - Technical",
+      "photo": "shaleen.jpg",
+      "linkedin": "https://linkedin.com/in/karan-malhotra",
+      "branch": "Information Technology",
+      "year": "Second Year"
+    },
+    {
+      "id": 4,
+      "name": "Mehwish Siddique",
+      "role": "Junior Designer",
+      "photo": "meh.jpg",
+      "linkedin": "https://linkedin.com/in/isha-sharma",
+      "branch": "AI&DS",
+      "year": "Second Year"
+    },
+    {
+      "id": 5,
+      "name": "Shashank Barot",
+      "role": "Jc Executive",
+      "photo": "BAROT.jpg",
+      "linkedin": "https://www.linkedin.com/in/shashank-barot-802216317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "branch": "E&TC",
+      "year": "Second Year"
+    },
+    {
+      "id": 6,
+      "name": "Subrat rout",
+      "role": "Jcs marketing",
+      "photo": "/placeholder.svg?height=250&width=250",
+      "linkedin": "https://www.linkedin.com/in/subrat-rout-78a523336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "branch": "AI&DS",
+      "year": "Second Year"
+    },
+    {
+      "id": 7,
+      "name": "Dia Tailor",
+      "role": "JC Marking",
+      "photo": "dia.jpg",
+      "linkedin": "https://linkedin.com/in/aryan-singh",
+      "branch": "AI&ML",
+      "year": "Second Year"
+    },
+    {
+      "id": 8,
+      "name": "Ashita Sharma",
+      "role": "Marketing JC",
+      "photo": "ashita.jpg",
+      "linkedin": "https://www.linkedin.com/in/ashita-sharma-56817b368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app-joshi",
+      "branch": "CSE",
+      "year": "Second Year"
+    },
+    {
+      "id": 9,
+      "name": "Kanchan Tripathi",
+      "role": "Junior core Operating",
+      "photo": "tripathi.jpg",
+      "linkedin": "www.linkedin.com/in/kanchan-tripathi-16b622345garwal",
+      "branch": "ECS",
+      "year": "Second Year"
+    },
+    {
+      "id": 10,
+      "name": "Shweta Shukla",
+      "role": "Junior Operating Core",
+      "photo": "shweta.png",
+      "linkedin": "https://linkedin.com/in/sakshi-gupta",
+      "branch": "Chemical Engineering",
+      "year": "First Year"
+    },
+    {
+      "id": 11,
+      "name": "Varun Reddy",
+      "role": "Junior Technical Support",
+      "photo": "/placeholder.svg?height=250&width=250",
+      "linkedin": "https://linkedin.com/in/varun-reddy",
+      "branch": "Computer Engineering",
+      "year": "Second Year"
+    },
+    {
+      "id": 12,
+      "name": "Anjali Nair",
+      "role": "Junior Partnership Assistant",
+      "photo": "/placeholder.svg?height=250&width=250",
+      "linkedin": "https://linkedin.com/in/anjali-nair",
+      "branch": "Civil Engineering",
+      "year": "First Year"
+    },
+    {
+      "id": 13,
+      "name": "Rohan Desai",
+      "role": "Junior Innovation Assistant",
+      "photo": "/placeholder.svg?height=250&width=250",
+      "linkedin": "https://linkedin.com/in/rohan-desai",
+      "branch": "Electrical Engineering",
+      "year": "Second Year"
+    },
+    {
+      "id": 14,
+      "name": "Tanvi Shah",
+      "role": "Junior Operations Assistant",
+      "photo": "/placeholder.svg?height=250&width=250",
+      "linkedin": "https://linkedin.com/in/tanvi-shah",
+      "branch": "Production Engineering",
+      "year": "First Year"
+    },
+    {
+      "id": 15,
+      "name": "Akash Verma",
+      "role": "Junior Strategy Assistant",
+      "photo": "/placeholder.svg?height=250&width=250",
+      "linkedin": "https://linkedin.com/in/akash-verma",
+      "branch": "Textile Engineering",
+      "year": "Second Year"
+    }
+  ]
+}

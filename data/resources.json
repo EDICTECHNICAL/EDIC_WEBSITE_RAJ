@@ -1,0 +1,204 @@
+{
+  "labResources": [
+    {
+      "id": 1,
+      "lab": "Electronics Lab",
+      "item": "Digital Oscilloscope",
+      "model": "Tektronix TBS1052B",
+      "quantity": 10,
+      "availability": "Available"
+    },
+    {
+      "id": 2,
+      "lab": "Electronics Lab",
+      "item": "Function Generator",
+      "model": "Agilent 33220A",
+      "quantity": 8,
+      "availability": "Available"
+    },
+    {
+      "id": 3,
+      "lab": "Electronics Lab",
+      "item": "Digital Multimeter",
+      "model": "Fluke 117",
+      "quantity": 15,
+      "availability": "Available"
+    },
+    {
+      "id": 4,
+      "lab": "Electronics Lab",
+      "item": "Power Supply Unit",
+      "model": "Keysight E3631A",
+      "quantity": 12,
+      "availability": "Available"
+    },
+    {
+      "id": 5,
+      "lab": "Electronics Lab",
+      "item": "Arduino Development Boards",
+      "model": "Arduino Uno R3",
+      "quantity": 25,
+      "availability": "Available"
+    },
+    {
+      "id": 6,
+      "lab": "Mechanical Lab",
+      "item": "3D Printer",
+      "model": "Ultimaker S3",
+      "quantity": 3,
+      "availability": "Available"
+    },
+    {
+      "id": 7,
+      "lab": "Mechanical Lab",
+      "item": "CNC Machine",
+      "model": "Haas Mini Mill",
+      "quantity": 2,
+      "availability": "In Use"
+    },
+    {
+      "id": 8,
+      "lab": "Mechanical Lab",
+      "item": "Laser Cutting Machine",
+      "model": "Epilog Zing 24",
+      "quantity": 1,
+      "availability": "Available"
+    },
+    {
+      "id": 9,
+      "lab": "Mechanical Lab",
+      "item": "Universal Testing Machine",
+      "model": "Instron 5969",
+      "quantity": 1,
+      "availability": "Available"
+    },
+    {
+      "id": 10,
+      "lab": "Mechanical Lab",
+      "item": "Coordinate Measuring Machine",
+      "model": "Mitutoyo CRYSTA-Apex S",
+      "quantity": 1,
+      "availability": "Available"
+    },
+    {
+      "id": 11,
+      "lab": "Computer Lab",
+      "item": "High-Performance GPU Workstations",
+      "model": "NVIDIA RTX 4090",
+      "quantity": 20,
+      "availability": "Available"
+    },
+    {
+      "id": 12,
+      "lab": "Computer Lab",
+      "item": "Development Servers",
+      "model": "Dell PowerEdge R750",
+      "quantity": 5,
+      "availability": "Available"
+    },
+    {
+      "id": 13,
+      "lab": "Computer Lab",
+      "item": "VR Headsets",
+      "model": "Meta Quest 3",
+      "quantity": 8,
+      "availability": "Available"
+    },
+    {
+      "id": 14,
+      "lab": "Computer Lab",
+      "item": "AI Development Kits",
+      "model": "NVIDIA Jetson AGX Orin",
+      "quantity": 10,
+      "availability": "Available"
+    },
+    {
+      "id": 15,
+      "lab": "Computer Lab",
+      "item": "Cloud Computing Credits",
+      "model": "AWS/Azure/GCP",
+      "quantity": "Unlimited",
+      "availability": "Available"
+    },
+    {
+      "id": 16,
+      "lab": "Civil Lab",
+      "item": "Concrete Testing Equipment",
+      "model": "Controls 65-L0006",
+      "quantity": 5,
+      "availability": "Available"
+    },
+    {
+      "id": 17,
+      "lab": "Civil Lab",
+      "item": "Soil Testing Kit",
+      "model": "Humboldt H-4140",
+      "quantity": 3,
+      "availability": "Available"
+    },
+    {
+      "id": 18,
+      "lab": "Civil Lab",
+      "item": "Total Station",
+      "model": "Leica TS16",
+      "quantity": 2,
+      "availability": "In Use"
+    },
+    {
+      "id": 19,
+      "lab": "Civil Lab",
+      "item": "Structural Analysis Software",
+      "model": "STAAD Pro",
+      "quantity": "50 Licenses",
+      "availability": "Available"
+    },
+    {
+      "id": 20,
+      "lab": "Civil Lab",
+      "item": "AutoCAD Workstations",
+      "model": "Dell Precision 3660",
+      "quantity": 30,
+      "availability": "Available"
+    },
+    {
+      "id": 21,
+      "lab": "Innovation Lab",
+      "item": "Rapid Prototyping Station",
+      "model": "Custom Setup",
+      "quantity": 5,
+      "availability": "Available"
+    },
+    {
+      "id": 22,
+      "lab": "Innovation Lab",
+      "item": "IoT Development Kits",
+      "model": "Raspberry Pi 4",
+      "quantity": 30,
+      "availability": "Available"
+    },
+    {
+      "id": 23,
+      "lab": "Innovation Lab",
+      "item": "Drone Development Platform",
+      "model": "DJI Matrice 300 RTK",
+      "quantity": 2,
+      "availability": "Available"
+    },
+    {
+      "id": 24,
+      "lab": "Innovation Lab",
+      "item": "Robotics Development Kit",
+      "model": "TurtleBot 3",
+      "quantity": 6,
+      "availability": "Available"
+    },
+    {
+      "id": 25,
+      "lab": "Innovation Lab",
+      "item": "PCB Fabrication Equipment",
+      "model": "LPKF ProtoMat S104",
+      "quantity": 1,
+      "availability": "Available"
+    }
+  ]
+}

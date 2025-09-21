@@ -1,0 +1,215 @@
+{
+  "upcomingEvents": [
+    {
+      "id": 1,
+      "title": "TechPreneur Summit 2.0",
+      "date": "25th & 27th September",
+      "time": "09:00 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Present your innovative startup ideas to industry experts and win exciting prizes. Open to all students with groundbreaking business concepts.",
+      "category": "Competition",
+      "location": "SH3 - TCET",
+      "registrationLink": "https://forms.google.com/startup-pitch-2024"
+    },
+    {
+      "id": 2,
+      "title": "AI & Machine Learning Workshop",
+      "date": "2024-03-22",
+      "time": "2:00 PM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Hands-on workshop covering the latest trends in AI and ML, with practical applications for startups and entrepreneurship.",
+      "category": "Workshop",
+      "location": "Innovation Lab",
+      "registrationLink": "https://forms.google.com/ai-ml-workshop-2024"
+    }
+  ],
+  "pastEvents": [
+    {
+      "id": 3,
+      "title": "Entrepreneurship Summit 2023",
+      "date": "2023-11-20",
+      "time": "9:00 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Annual summit featuring keynote speakers from successful startups and industry leaders sharing their journey.",
+      "category": "Summit",
+      "location": "TCET Main Campus",
+      "attendees": 500
+    },
+    {
+      "id": 4,
+      "title": "Blockchain Technology Workshop",
+      "date": "2023-10-15",
+      "time": "11:00 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Deep dive into blockchain technology and its applications in modern business and entrepreneurship.",
+      "category": "Workshop",
+      "location": "Computer Lab",
+      "attendees": 80
+    },
+    {
+      "id": 5,
+      "title": "Women in Tech Panel Discussion",
+      "date": "2023-09-08",
+      "time": "3:00 PM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Inspiring panel discussion featuring successful women entrepreneurs and tech leaders.",
+      "category": "Panel",
+      "location": "Conference Hall",
+      "attendees": 150
+    },
+    {
+      "id": 6,
+      "title": "Fintech Innovation Challenge",
+      "date": "2023-08-25",
+      "time": "10:00 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "24-hour hackathon focused on developing innovative fintech solutions for real-world problems.",
+      "category": "Hackathon",
+      "location": "Innovation Lab",
+      "attendees": 120
+    },
+    {
+      "id": 7,
+      "title": "Digital Marketing Masterclass",
+      "date": "2023-07-12",
+      "time": "2:00 PM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Comprehensive masterclass on digital marketing strategies for startups and small businesses.",
+      "category": "Masterclass",
+      "location": "Seminar Hall",
+      "attendees": 200
+    },
+    {
+      "id": 8,
+      "title": "IoT Solutions Workshop",
+      "date": "2023-06-18",
+      "time": "10:30 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Hands-on workshop on Internet of Things (IoT) applications and their entrepreneurial potential.",
+      "category": "Workshop",
+      "location": "Electronics Lab",
+      "attendees": 90
+    },
+    {
+      "id": 9,
+      "title": "Venture Capital Funding Session",
+      "date": "2023-05-30",
+      "time": "4:00 PM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Interactive session with VCs and angel investors discussing funding opportunities for startups.",
+      "category": "Networking",
+      "location": "Business Center",
+      "attendees": 180
+    },
+    {
+      "id": 10,
+      "title": "Sustainable Technology Expo",
+      "date": "2023-04-22",
+      "time": "9:00 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Exhibition showcasing sustainable technology innovations and green entrepreneurship opportunities.",
+      "category": "Expo",
+      "location": "Main Campus Ground",
+      "attendees": 300
+    },
+    {
+      "id": 11,
+      "title": "Mobile App Development Bootcamp",
+      "date": "2023-03-15",
+      "time": "10:00 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Intensive 3-day bootcamp covering mobile app development from concept to deployment.",
+      "category": "Bootcamp",
+      "location": "Computer Lab",
+      "attendees": 60
+    },
+    {
+      "id": 12,
+      "title": "E-commerce Strategy Workshop",
+      "date": "2023-02-28",
+      "time": "1:00 PM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Strategic workshop on building and scaling e-commerce businesses in the digital age.",
+      "category": "Workshop",
+      "location": "Seminar Hall",
+      "attendees": 110
+    },
+    {
+      "id": 13,
+      "title": "Robotics Innovation Challenge",
+      "date": "2023-01-20",
+      "time": "9:30 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Competition showcasing innovative robotics solutions with applications in various industries.",
+      "category": "Competition",
+      "location": "Mechanical Lab",
+      "attendees": 85
+    },
+    {
+      "id": 14,
+      "title": "Social Entrepreneurship Forum",
+      "date": "2022-12-10",
+      "time": "11:00 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Forum discussing social entrepreneurship and creating businesses with positive social impact.",
+      "category": "Forum",
+      "location": "Conference Hall",
+      "attendees": 220
+    },
+    {
+      "id": 15,
+      "title": "Cybersecurity Startup Showcase",
+      "date": "2022-11-25",
+      "time": "3:30 PM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Showcase of cybersecurity startups and discussion on opportunities in the cybersecurity sector.",
+      "category": "Showcase",
+      "location": "IT Auditorium",
+      "attendees": 160
+    },
+    {
+      "id": 16,
+      "title": "Green Energy Innovation Summit",
+      "date": "2022-10-15",
+      "time": "10:00 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Summit focusing on renewable energy innovations and sustainable business opportunities.",
+      "category": "Summit",
+      "location": "Main Auditorium",
+      "attendees": 400
+    },
+    {
+      "id": 17,
+      "title": "Data Science for Business Workshop",
+      "date": "2022-09-18",
+      "time": "2:30 PM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Workshop on leveraging data science and analytics for business growth and decision making.",
+      "category": "Workshop",
+      "location": "Data Lab",
+      "attendees": 95
+    },
+    {
+      "id": 18,
+      "title": "Startup Legal Framework Seminar",
+      "date": "2022-08-30",
+      "time": "4:00 PM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Seminar covering legal aspects of starting and running a business, including compliance and regulations.",
+      "category": "Seminar",
+      "location": "Law Auditorium",
+      "attendees": 140
+    },
+    {
+      "id": 19,
+      "title": "Innovation in Healthcare Tech",
+      "date": "2022-07-22",
+      "time": "11:30 AM",
+      "poster": "/placeholder.svg?height=400&width=600",
+      "description": "Exploring innovations in healthcare technology and opportunities for health-tech entrepreneurship.",
+      "category": "Conference",
+      "location": "Medical Center",
+      "attendees": 180
+    }
+  ]
+}
