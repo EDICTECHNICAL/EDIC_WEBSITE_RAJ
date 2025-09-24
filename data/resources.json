@@ -2,202 +2,114 @@
   "labResources": [
     {
       "id": 1,
-      "lab": "Electronics Lab",
-      "item": "Digital Oscilloscope",
-      "model": "Tektronix TBS1052B",
-      "quantity": 10,
+      "lab": "Microprocessor/Embedded System Lab (118A & B)",
+      "item": "Over Head Projector",
+      "model": "Standard OHP",
+      "quantity": 1,
       "availability": "Available"
     },
     {
       "id": 2,
-      "lab": "Electronics Lab",
-      "item": "Function Generator",
-      "model": "Agilent 33220A",
-      "quantity": 8,
+      "lab": "Microprocessor/Embedded System Lab (118A & B)",
+      "item": "Dual Power Supply",
+      "model": "LD 3202 & LQ6324",
+      "quantity": 11,
       "availability": "Available"
     },
     {
       "id": 3,
-      "lab": "Electronics Lab",
-      "item": "Digital Multimeter",
-      "model": "Fluke 117",
-      "quantity": 15,
+      "lab": "Microprocessor/Embedded System Lab (118A & B)",
+      "item": "Microprocessor Kit",
+      "model": "8085",
+      "quantity": 16,
       "availability": "Available"
     },
     {
       "id": 4,
-      "lab": "Electronics Lab",
-      "item": "Power Supply Unit",
-      "model": "Keysight E3631A",
-      "quantity": 12,
+      "lab": "Microprocessor/Embedded System Lab (118A & B)",
+      "item": "Microprocessor Kit",
+      "model": "8086",
+      "quantity": 16,
       "availability": "Available"
     },
     {
       "id": 5,
-      "lab": "Electronics Lab",
-      "item": "Arduino Development Boards",
-      "model": "Arduino Uno R3",
-      "quantity": 25,
+      "lab": "Microprocessor/Embedded System Lab (118A & B)",
+      "item": "Microcontroller Kit",
+      "model": "SBC196",
+      "quantity": 9,
       "availability": "Available"
     },
     {
       "id": 6,
-      "lab": "Mechanical Lab",
-      "item": "3D Printer",
-      "model": "Ultimaker S3",
-      "quantity": 3,
+      "lab": "Advanced Communication & Networking Lab (104)",
+      "item": "Advance Fiber Optical Communication Trainer",
+      "model": "RFL-SCT",
+      "quantity": 1,
       "availability": "Available"
     },
     {
       "id": 7,
-      "lab": "Mechanical Lab",
-      "item": "CNC Machine",
-      "model": "Haas Mini Mill",
-      "quantity": 2,
-      "availability": "In Use"
+      "lab": "Advanced Communication & Networking Lab (104)",
+      "item": "Satellite Communication Trainer",
+      "model": "Amitec STC24A (2.3–2.8GHz)",
+      "quantity": 1,
+      "availability": "Available"
     },
     {
       "id": 8,
-      "lab": "Mechanical Lab",
-      "item": "Laser Cutting Machine",
-      "model": "Epilog Zing 24",
-      "quantity": 1,
+      "lab": "IoT Lab (213)",
+      "item": "Raspberry Pi 4B",
+      "model": "2GB Version",
+      "quantity": 5,
       "availability": "Available"
     },
     {
       "id": 9,
-      "lab": "Mechanical Lab",
-      "item": "Universal Testing Machine",
-      "model": "Instron 5969",
-      "quantity": 1,
-      "availability": "Available"
-    },
-    {
-      "id": 10,
-      "lab": "Mechanical Lab",
-      "item": "Coordinate Measuring Machine",
-      "model": "Mitutoyo CRYSTA-Apex S",
-      "quantity": 1,
-      "availability": "Available"
-    },
-    {
-      "id": 11,
-      "lab": "Computer Lab",
-      "item": "High-Performance GPU Workstations",
-      "model": "NVIDIA RTX 4090",
-      "quantity": 20,
-      "availability": "Available"
-    },
-    {
-      "id": 12,
-      "lab": "Computer Lab",
-      "item": "Development Servers",
-      "model": "Dell PowerEdge R750",
-      "quantity": 5,
-      "availability": "Available"
-    },
-    {
-      "id": 13,
-      "lab": "Computer Lab",
-      "item": "VR Headsets",
-      "model": "Meta Quest 3",
-      "quantity": 8,
-      "availability": "Available"
-    },
-    {
-      "id": 14,
-      "lab": "Computer Lab",
-      "item": "AI Development Kits",
-      "model": "NVIDIA Jetson AGX Orin",
+      "lab": "IoT Lab (213)",
+      "item": "Arduino Uno",
+      "model": "Atmega 328P",
       "quantity": 10,
       "availability": "Available"
     },
     {
-      "id": 15,
-      "lab": "Computer Lab",
-      "item": "Cloud Computing Credits",
-      "model": "AWS/Azure/GCP",
-      "quantity": "Unlimited",
+      "id": 10,
+      "lab": "Machine Learning Lab (307)",
+      "item": "High-Performance Workstation",
+      "model": "HP 280 G8 Microtower (Core i7, 8GB RAM, 1TB HDD)",
+      "quantity": 36,
       "availability": "Available"
     },
     {
-      "id": 16,
-      "lab": "Civil Lab",
-      "item": "Concrete Testing Equipment",
-      "model": "Controls 65-L0006",
-      "quantity": 5,
-      "availability": "Available"
-    },
-    {
-      "id": 17,
-      "lab": "Civil Lab",
-      "item": "Soil Testing Kit",
-      "model": "Humboldt H-4140",
-      "quantity": 3,
-      "availability": "Available"
-    },
-    {
-      "id": 18,
-      "lab": "Civil Lab",
-      "item": "Total Station",
-      "model": "Leica TS16",
-      "quantity": 2,
-      "availability": "In Use"
-    },
-    {
-      "id": 19,
-      "lab": "Civil Lab",
-      "item": "Structural Analysis Software",
-      "model": "STAAD Pro",
-      "quantity": "50 Licenses",
-      "availability": "Available"
-    },
-    {
-      "id": 20,
-      "lab": "Civil Lab",
-      "item": "AutoCAD Workstations",
-      "model": "Dell Precision 3660",
-      "quantity": 30,
-      "availability": "Available"
-    },
-    {
-      "id": 21,
-      "lab": "Innovation Lab",
-      "item": "Rapid Prototyping Station",
-      "model": "Custom Setup",
-      "quantity": 5,
-      "availability": "Available"
-    },
-    {
-      "id": 22,
-      "lab": "Innovation Lab",
-      "item": "IoT Development Kits",
-      "model": "Raspberry Pi 4",
-      "quantity": 30,
-      "availability": "Available"
-    },
-    {
-      "id": 23,
-      "lab": "Innovation Lab",
-      "item": "Drone Development Platform",
-      "model": "DJI Matrice 300 RTK",
-      "quantity": 2,
-      "availability": "Available"
-    },
-    {
-      "id": 24,
-      "lab": "Innovation Lab",
-      "item": "Robotics Development Kit",
-      "model": "TurtleBot 3",
-      "quantity": 6,
-      "availability": "Available"
-    },
-    {
-      "id": 25,
-      "lab": "Innovation Lab",
-      "item": "PCB Fabrication Equipment",
-      "model": "LPKF ProtoMat S104",
+      "id": 11,
+      "lab": "Project & Research Lab (221 A & B)",
+      "item": "Workstation",
+      "model": "Dell Precision 3660 Tower CTO (Intel Core i9, RTX A2000)",
       "quantity": 1,
+      "availability": "Available"
+    },
+    {
+      "id": 12,
+      "lab": "Professional Skill & Industry Practice Lab (203 A & B)",
+      "item": "Desktop",
+      "model": "Dell Vostro 3910 (Intel i7 12700, 16GB DDR4, NVMe SSD)",
+      "quantity": 36,
+      "availability": "Available"
+    },
+    {
+      "id": 13,
+      "lab": "Multimedia & Computing System Design Lab (324 A & B)",
+      "item": "Desktop",
+      "model": "HP 280 G4 MT (Intel i7-8700, 8GB RAM, 1TB HDD)",
+      "quantity": 20,
+      "availability": "Available"
+    },
+    {
+      "id": 14,
+      "lab": "Multimedia & Computing System Design Lab (324 A & B)",
+      "item": "Desktop",
+      "model": "HP 280 Pro G8 (Intel i5-11400, 8GB RAM, 1TB HDD)",
+      "quantity": 15,
       "availability": "Available"
     }
   ]

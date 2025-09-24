@@ -104,9 +104,9 @@ export default function AboutPage() {
               </div>
               <div className="lg:pl-8">
                 <img
-                  src="/modern-innovation-lab-with-students-working.jpg"
+                  src="/EDIC-CORE-IMAGE.jpg"
                   alt="EDIC Innovation Lab"
-                  className="rounded-2xl shadow-xl border-2 border-primary/20"
+                  className="w-[900px] h-[400px] rounded-lg shadow-lg"
                 />
               </div>
             </div>

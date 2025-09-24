@@ -2,93 +2,113 @@
   "alumni": [
     {
       "id": 1,
-      "name": "Rajesh Agarwal",
-      "startup": "TechFlow Solutions",
-      "industry": "SaaS",
-      "foundedYear": "2020",
-      "linkedin": "https://linkedin.com/in/rajesh-agarwal-techflow",
-      "description": "AI-powered workflow automation platform serving 500+ enterprises globally."
+      "name": "Ankit Tripathi",
+      "startup": "Dermis Oracle Pvt Ltd",
+      "industry": "Pharma",
+      "foundedYear": "—",
+      "linkedin": "mailto:ankit@dermisoracle.com",
+      "photo": "/photos/ankit-tripathi.jpg",
+      "description": "Founder of Dermis Oracle Pvt Ltd, contributing to pharmaceutical innovations."
     },
     {
       "id": 2,
-      "name": "Priya Sharma",
-      "startup": "EcoGreen Innovations",
-      "industry": "Sustainability",
-      "foundedYear": "2019",
-      "linkedin": "https://linkedin.com/in/priya-sharma-ecogreen",
-      "description": "Sustainable packaging solutions reducing plastic waste by 80% for food industry."
+      "name": "Sagar Pipaliya",
+      "startup": "Pitru Krupa Building Contractor",
+      "industry": "Construction and Real Estate",
+      "foundedYear": "—",
+      "linkedin": "mailto:pipaliyasagar57@gmail.com",
+      "photo": "/photos/sagar-pipaliya.jpg",
+      "description": "Partner and Co-founder in construction and real estate development."
     },
     {
       "id": 3,
-      "name": "Amit Kumar",
-      "startup": "HealthTech Pro",
-      "industry": "Healthcare",
-      "foundedYear": "2021",
-      "linkedin": "https://linkedin.com/in/amit-kumar-healthtech",
-      "description": "Telemedicine platform connecting rural patients with specialist doctors."
+      "name": "Ravi Yadav",
+      "startup": "Toroid Technologies Pvt Ltd",
+      "industry": "Supply Chain & Product Management",
+      "foundedYear": "—",
+      "linkedin": "mailto:raviyadavsnv@mail.com",
+      "photo": "/photos/ravi-yadav.jpg",
+      "description": "Co-Founder and COO, specializing in supply chain management and product solutions."
     },
     {
       "id": 4,
-      "name": "Sneha Patel",
-      "startup": "EduLearn AI",
-      "industry": "EdTech",
-      "foundedYear": "2020",
-      "linkedin": "https://linkedin.com/in/sneha-patel-edulearn",
-      "description": "Personalized learning platform using AI to adapt to student learning patterns."
+      "name": "Anish Burke",
+      "startup": "Wings Bionic LLP / F2Root",
+      "industry": "Electronics & Engineering",
+      "foundedYear": "—",
+      "linkedin": "mailto:anishb92@gmail.com",
+      "photo": "/photos/anish-burke.jpg",
+      "description": "Director & Co-founder, leading R&D in ICS systems, penetration testing, and electrical vehicle power electronics."
     },
     {
       "id": 5,
-      "name": "Vikram Singh",
-      "startup": "FinSecure",
-      "industry": "FinTech",
-      "foundedYear": "2022",
-      "linkedin": "https://linkedin.com/in/vikram-singh-finsecure",
-      "description": "Blockchain-based secure payment solutions for small and medium enterprises."
+      "name": "Vaibhav Kala",
+      "startup": "Sudha Solutions",
+      "industry": "E-Commerce & Marketing",
+      "foundedYear": "—",
+      "linkedin": "mailto:Vaibhav@sudhasolutions.in",
+      "photo": "/photos/vaibhav-kala.jpg",
+      "description": "Founder of Sudha Solutions, working in e-commerce growth, retention, and customer engagement."
     },
     {
       "id": 6,
-      "name": "Kavya Reddy",
-      "startup": "AgriTech Solutions",
-      "industry": "Agriculture",
-      "foundedYear": "2021",
-      "linkedin": "https://linkedin.com/in/kavya-reddy-agritech",
-      "description": "IoT-based smart farming solutions helping farmers increase crop yield by 40%."
+      "name": "Sanket Berde",
+      "startup": "BlackCurrent Labs Pvt. Ltd",
+      "industry": "Technology",
+      "foundedYear": "—",
+      "linkedin": "mailto:sanket.berde@gmail.com",
+      "photo": "/photos/sanket-berde.jpg",
+      "description": "Managing Director and CTO, developing cloud-based system architectures, mobile apps, and web platforms."
     },
     {
       "id": 7,
-      "name": "Rohit Jain",
-      "startup": "MobilityNext",
-      "industry": "Transportation",
-      "foundedYear": "2020",
-      "linkedin": "https://linkedin.com/in/rohit-jain-mobility",
-      "description": "Electric vehicle charging network with 200+ stations across Maharashtra."
+      "name": "Priyank Modi",
+      "startup": "KP Webbate Technologies",
+      "industry": "Digital Business",
+      "foundedYear": "—",
+      "linkedin": "mailto:singhpriyank2598@gmail.com",
+      "photo": "/photos/priyank-modi.jpg",
+      "description": "Founder, providing digital business solutions at KP Webbate Technologies."
     },
     {
       "id": 8,
-      "name": "Ananya Gupta",
-      "startup": "FoodTech Innovations",
-      "industry": "Food Technology",
-      "foundedYear": "2019",
-      "linkedin": "https://linkedin.com/in/ananya-gupta-foodtech",
-      "description": "Plant-based protein alternatives reducing environmental impact of food production."
+      "name": "Avinash Gupta",
+      "startup": "PowerZest",
+      "industry": "Green Energy",
+      "foundedYear": "—",
+      "linkedin": "mailto:info@powerzest.in",
+      "photo": "/photos/avinash-gupta.jpg",
+      "description": "Co-Founder & CEO of PowerZest, focusing on green energy innovations."
     },
     {
       "id": 9,
-      "name": "Karan Malhotra",
-      "startup": "CyberShield Pro",
-      "industry": "Cybersecurity",
-      "foundedYear": "2022",
-      "linkedin": "https://linkedin.com/in/karan-malhotra-cybershield",
-      "description": "AI-powered cybersecurity solutions protecting 100+ SMEs from cyber threats."
+      "name": "Aniket Sawadekar",
+      "startup": "Truskill Academy",
+      "industry": "Academics & Training",
+      "foundedYear": "—",
+      "linkedin": "mailto:anket.sawardekar@gmail.com",
+      "photo": "/photos/aniket-sawadekar.jpg",
+      "description": "Head of Aptitude at Truskill Academy, providing training in academics and skills development."
     },
     {
       "id": 10,
-      "name": "Isha Nair",
-      "startup": "RetailTech Hub",
-      "industry": "Retail Technology",
-      "foundedYear": "2021",
-      "linkedin": "https://linkedin.com/in/isha-nair-retailtech",
-      "description": "Omnichannel retail platform helping traditional stores transition to digital."
+      "name": "Jatin Raj & Rahul Sharma",
+      "startup": "Visiosoft IT Solutions LLP",
+      "industry": "IT Solutions",
+      "foundedYear": "—",
+      "linkedin": "mailto:sales@visiosoftsolutions.com",
+      "photo": "/photos/visiosoft-founders.jpg",
+      "description": "Designated partners at Visiosoft IT Solutions LLP, delivering innovative IT services."
+    },
+    {
+      "id": 11,
+      "name": "Ashish Gokiani",
+      "startup": "Kalaguru Builders & Developers / Hotel Infinity",
+      "industry": "Construction & Hospitality",
+      "foundedYear": "—",
+      "linkedin": "mailto:ashishgokiani64@gmail.com",
+      "photo": "/photos/ashish-gokiani.jpg",
+      "description": "Structural Consultant and entrepreneur in real estate and hospitality industries."
     }
   ]
 }

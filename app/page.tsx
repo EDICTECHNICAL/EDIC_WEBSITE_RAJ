@@ -14,7 +14,7 @@ export default function HomePage() {
       <section
         className="relative min-h-screen flex items-center"
         style={{
-          backgroundImage: `url('/EDIC-CORE-IMAGE.jpg')`, // Assumes image is in /public folder
+          backgroundImage: `url('every.jpg')`, // Assumes image is in /public folder
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -221,8 +221,8 @@
       "id": 14,
       "name": "Mishti Dhiman",
       "role": "PR Head",
-      "photo": "/placeholder.svg?height=300&width=300",
-      "linkedin": "https://linkedin.com/in/priyanka-gupta",
+      "photo": "mishti.jpg",
+      "linkedin": "http://linkedin.com/in/mishti-dhiman-489530347",
       "branch": "COMPS",
       "year": "SE"
     },
@@ -329,11 +329,11 @@
     },
     {
       "id": 11,
-      "name": "Varun Reddy",
-      "role": "Junior Technical Support",
-      "photo": "/placeholder.svg?height=250&width=250",
+      "name": "Rudransh Puthan",
+      "role": "Operating JC",
+      "photo": "rudransh.jpeg",
       "linkedin": "https://linkedin.com/in/varun-reddy",
-      "branch": "Computer Engineering",
+      "branch": "AI&ML",
       "year": "Second Year"
     },
     {
