@@ -47,7 +47,7 @@
       "name": "Ms. Usha Gupta",
       "branch": "IOT",
       "photo": "usha.jpg",
-      "linkedin": "http://linkedin.com/in/usha-gupta-8a8b3a279"
+      "linkedin": "https://linkedin.com/in/usha-gupta-8a8b3a279"
     },
     {
       "id": 8,
@@ -66,14 +66,12 @@
     {
       "id": 13,
       "name": "Chhavi Birla",
-    
       "photo": "birla.jpg",
       "linkedin": "https://linkedin.com/in/sandeep-joshi"
     },
     {
       "id": 14,
       "name": "Dr. Ranjita Asati",
-    
       "photo": "asati.jpg",
       "linkedin": "https://linkedin.com/in/chhavi-birla"
     }
@@ -102,7 +100,7 @@
       "name": "Hredey Chaand",
       "role": "CMO",
       "photo": "Hredey.jpg",
-      "linkedin": "https://www.linkedin.com/in/hredey-chaand-b10787351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "linkedin": "https://www.linkedin.com/in/hredey-chaand-b10787351",
       "branch": "COMPS",
       "year": "SE"
     },
@@ -145,7 +143,7 @@
     {
       "id": 8,
       "name": "Raj Mane",
-      "role": "Teachnical Head",
+      "role": "Technical Head",
       "photo": "Raj Mane.jpg",
       "linkedin": "https://linkedin.com/in/kavya-singh",
       "branch": "COMP",
@@ -183,7 +181,7 @@
       "name": "Nidhi Shukla",
       "role": "Event Manager",
       "photo": "nidhi.jpg",
-      "linkedin": "https://www.linkedin.com/in/nidhi-shukla-36151a329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "linkedin": "https://www.linkedin.com/in/nidhi-shukla-36151a329",
       "branch": "AI&ML",
       "year": "SE"
     },
@@ -200,8 +198,8 @@
       "id": 14,
       "name": "Mishti Dhiman",
       "role": "PR Head",
-      "photo": "/placeholder.svg?height=300&width=300",
-      "linkedin": "https://linkedin.com/in/priyanka-gupta",
+      "photo": "mishti.jpg",
+      "linkedin": "https://linkedin.com/in/mishti-dhiman-489530347",
       "branch": "COMPS",
       "year": "SE"
     },
@@ -221,7 +219,7 @@
       "name": "Krish Choudhary",
       "role": "Junior Core - Technical",
       "photo": "krishc.jpg",
-      "linkedin": "https://www.linkedin.com/in/nikita-tiwari-73a90330b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "linkedin": "https://www.linkedin.com/in/nikita-tiwari-73a90330b",
       "branch": "Computer Engineering",
       "year": "Second Year"
     },
@@ -255,25 +253,25 @@
     {
       "id": 5,
       "name": "Shashank Barot",
-      "role": "Jc Executive",
+      "role": "JC Executive",
       "photo": "BAROT.jpg",
-      "linkedin": "https://www.linkedin.com/in/shashank-barot-802216317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "linkedin": "https://www.linkedin.com/in/shashank-barot-802216317",
       "branch": "E&TC",
       "year": "Second Year"
     },
     {
       "id": 6,
       "name": "Subrat rout",
-      "role": "Jcs marketing",
+      "role": "JC Marketing",
       "photo": "/placeholder.svg?height=250&width=250",
-      "linkedin": "https://www.linkedin.com/in/subrat-rout-78a523336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "linkedin": "https://www.linkedin.com/in/subrat-rout-78a523336",
       "branch": "AI&DS",
       "year": "Second Year"
     },
     {
       "id": 7,
       "name": "Dia Tailor",
-      "role": "JC Marking",
+      "role": "JC Marketing",
       "photo": "dia.jpg",
       "linkedin": "https://linkedin.com/in/aryan-singh",
       "branch": "AI&ML",
@@ -284,16 +282,16 @@
       "name": "Ashita Sharma",
       "role": "Marketing JC",
       "photo": "ashita.jpg",
-      "linkedin": "https://www.linkedin.com/in/ashita-sharma-56817b368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app-joshi",
+      "linkedin": "https://www.linkedin.com/in/ashita-sharma-56817b368",
       "branch": "CSE",
       "year": "Second Year"
     },
     {
       "id": 9,
       "name": "Kanchan Tripathi",
-      "role": "Junior core Operating",
+      "role": "Junior Core Operating",
       "photo": "tripathi.jpg",
-      "linkedin": "www.linkedin.com/in/kanchan-tripathi-16b622345garwal",
+      "linkedin": "https://www.linkedin.com/in/kanchan-tripathi-16b622345",
       "branch": "ECS",
       "year": "Second Year"
     },
@@ -309,10 +307,10 @@
     {
       "id": 11,
       "name": "Rudransh Puthan",
-      "role": "Junior Technical Support",
-      "photo": "/placeholder.svg?height=250&width=250",
+      "role": "Operating JC",
+      "photo": "rudransh.jpeg",
       "linkedin": "https://linkedin.com/in/varun-reddy",
-      "branch": "Computer Engineering",
+      "branch": "AI&ML",
       "year": "Second Year"
     },
     {

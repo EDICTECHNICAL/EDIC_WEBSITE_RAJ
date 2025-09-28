@@ -40,14 +40,27 @@ export default function Navbar() {
           <Link href="/" className="-m-1.5 p-1.5 group">
             <span className="sr-only">EDIC TCET</span>
             <div className="flex items-center space-x-3">
-              <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-all duration-300 entrepreneurship-shadow">
-                <span className="text-primary-foreground font-bold text-lg">E</span>
+              <div className="flex space-x-2 group-hover:scale-110 transition-transform duration-300 entrepreneurship-shadow">
+                {/* Using inline styles for exact size */}
+                <img
+                  src="axios.jpeg"
+                  alt="AXIOS"
+                  className="rounded-lg object-contain"
+                  style={{ height: "150px", width: "150px" }} // equivalent to h-16 w-16
+                />
+                <img
+                  src="edic.jpeg"
+                  alt="EDIC"
+                  className="rounded-lg object-contain"
+                  style={{ height: "150px", width: "150px" }}
+                />
               </div>
+
               <div className="hidden sm:block">
-                <div className="responsive-text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                <div className="responsive-text-xl font-extrabold text-foreground group-hover:text-primary transition-colors duration-300">
                   EDIC TCET
                 </div>
-                <div className="text-xs text-muted-foreground">Innovation & Entrepreneurship</div>
+                <div className="text-sm text-muted-foreground">Innovation & Entrepreneurship</div>
               </div>
             </div>
           </Link>
@@ -68,7 +81,8 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="responsive-text-sm font-medium leading-6 text-foreground hover:text-primary transition-all duration-300 relative group"
+              className="responsive-text-md font-semibold leading-7 text-foreground hover:text-primary transition-all duration-300 relative group"
+              style={{ fontSize: "1.125rem" }} // 18px size, bigger than default
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -85,10 +99,20 @@ export default function Navbar() {
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">EDIC TCET</span>
                 <div className="flex items-center space-x-3">
-                  <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">E</span>
-                  </div>
-                  <span className="text-lg font-bold text-foreground">EDIC TCET</span>
+                  {/* Larger logos in mobile menu */}
+                  <img
+                    src="axios.jpeg"
+                    alt="AXIOS"
+                    className="rounded-lg object-contain"
+                    style={{ height: "48px", width: "48px" }}
+                  />
+                  <img
+                    src="edic.jpeg"
+                    alt="EDIC"
+                    className="rounded-lg object-contain"
+                    style={{ height: "48px", width: "48px" }}
+                  />
+                  <span className="text-xl font-bold text-foreground">EDIC TCET</span>
                 </div>
               </Link>
               <Button
@@ -108,7 +132,7 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-lg font-medium leading-7 text-foreground hover:bg-muted"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}

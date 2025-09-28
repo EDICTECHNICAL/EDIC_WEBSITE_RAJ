@@ -10,10 +10,10 @@ import alumniData from "@/data/alumni.json"
 const forms = [
   {
     id: 1,
-    title: "EDIC Student Registration",
+    title: "EDIC Membership Form",
     description: "Join the EDIC community and get access to exclusive events, resources, and mentorship opportunities.",
     icon: Users,
-    link: "https://forms.google.com/edic-student-registration",
+    link: "https://forms.gle/f3BJF2shNn66bYX57",
     color: "bg-primary",
   },
   {
@@ -22,7 +22,7 @@ const forms = [
     description:
       "Share your innovative startup idea with our expert panel for feedback and potential incubation support.",
     icon: Lightbulb,
-    link: "https://forms.google.com/submit-startup-idea",
+    link: "https://forms.gle/scWb3VR7HZPqMd6v7",
     color: "bg-accent",
   },
   {
@@ -30,7 +30,7 @@ const forms = [
     title: "Request Mentorship",
     description: "Connect with industry experts and successful entrepreneurs for personalized guidance and mentorship.",
     icon: Users,
-    link: "https://forms.google.com/request-mentorship",
+    link: "https://forms.gle/7mVizTDqVHzcnWdC9",
     color: "bg-primary",
   },
   {
@@ -38,7 +38,7 @@ const forms = [
     title: "Request Lab Resources",
     description: "Access our state-of-the-art lab equipment and facilities for your innovative projects and research.",
     icon: Wrench,
-    link: "https://forms.google.com/request-lab-resources",
+    link: "https://forms.gle/yxzYjWATc5Fj9uuy8",
     color: "bg-accent",
   },
 ]
@@ -170,7 +170,7 @@ export default function StudentsPage() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link
-                  href="https://forms.google.com/edic-student-registration"
+                  href="https://forms.gle/f3BJF2shNn66bYX57"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
