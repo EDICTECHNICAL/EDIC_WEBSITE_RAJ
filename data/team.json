@@ -263,7 +263,7 @@
       "id": 6,
       "name": "Subrat rout",
       "role": "JC Marketing",
-      "photo": "/placeholder.svg?height=250&width=250",
+      "photo": "subrat.jpg",
       "linkedin": "https://www.linkedin.com/in/subrat-rout-78a523336",
       "branch": "AI&DS",
       "year": "Second Year"
@@ -311,42 +311,6 @@
       "photo": "rudransh.jpeg",
       "linkedin": "https://linkedin.com/in/varun-reddy",
       "branch": "AI&ML",
-      "year": "Second Year"
-    },
-    {
-      "id": 12,
-      "name": "Anjali Nair",
-      "role": "Junior Partnership Assistant",
-      "photo": "/placeholder.svg?height=250&width=250",
-      "linkedin": "https://linkedin.com/in/anjali-nair",
-      "branch": "Civil Engineering",
-      "year": "First Year"
-    },
-    {
-      "id": 13,
-      "name": "Rohan Desai",
-      "role": "Junior Innovation Assistant",
-      "photo": "/placeholder.svg?height=250&width=250",
-      "linkedin": "https://linkedin.com/in/rohan-desai",
-      "branch": "Electrical Engineering",
-      "year": "Second Year"
-    },
-    {
-      "id": 14,
-      "name": "Tanvi Shah",
-      "role": "Junior Operations Assistant",
-      "photo": "/placeholder.svg?height=250&width=250",
-      "linkedin": "https://linkedin.com/in/tanvi-shah",
-      "branch": "Production Engineering",
-      "year": "First Year"
-    },
-    {
-      "id": 15,
-      "name": "Akash Verma",
-      "role": "Junior Strategy Assistant",
-      "photo": "/placeholder.svg?height=250&width=250",
-      "linkedin": "https://linkedin.com/in/akash-verma",
-      "branch": "Textile Engineering",
       "year": "Second Year"
     }
   ]
