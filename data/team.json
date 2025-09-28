@@ -64,27 +64,6 @@
       "linkedin": "https://linkedin.com/in/anil-verma"
     },
     {
-      "id": 10,
-      "name": "Dr. Nidhi Tiwari",
-      "branch": "ES&H",
-      "photo": "nidhit.png",
-      "linkedin": "https://linkedin.com/in/sunita-nair"
-    },
-    {
-      "id": 11,
-      "name": "Dr. Rajesh Khanna",
-      "branch": "EXTC",
-      "photo": "/placeholder.svg?height=300&width=300",
-      "linkedin": "https://linkedin.com/in/rajesh-khanna"
-    },
-    {
-      "id": 12,
-      "name": "Ms. Priya Deshmukh",
-      "branch": "TEXTILE",
-      "photo": "/placeholder.svg?height=300&width=300",
-      "linkedin": "https://linkedin.com/in/priya-deshmukh"
-    },
-    {
       "id": 13,
       "name": "Chhavi Birla",
     
@@ -329,7 +308,7 @@
     },
     {
       "id": 11,
-      "name": "Varun Reddy",
+      "name": "Rudransh Puthan",
       "role": "Junior Technical Support",
       "photo": "/placeholder.svg?height=250&width=250",
       "linkedin": "https://linkedin.com/in/varun-reddy",
