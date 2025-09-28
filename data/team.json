@@ -312,6 +312,24 @@
       "linkedin": "https://linkedin.com/in/varun-reddy",
       "branch": "AI&ML",
       "year": "Second Year"
+    },
+    {
+      "id": 12,
+      "name": "Yash Mattha",
+      "role": "Operating JC",
+      "photo": ".jpeg",
+      "linkedin": "https://linkedin.com/in/varun-reddy",
+      "branch": "COMPS",
+      "year": "Second Year"
+    },
+    {
+      "id": 13,
+      "name": "Varun Maurya",
+      "role": "JC Executive",
+      "photo": "varun.jpg",
+      "linkedin": "https://linkedin.com/in/varun-reddy",
+      "branch": "AI&ML",
+      "year": "Second Year"
     }
   ]
 }
