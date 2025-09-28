@@ -3,20 +3,19 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Team", href: "/team" },
   { name: "Events", href: "/events" },
-  { name: "Student's Corner", href: "/students" },
+  { name: "Students", href: "/students" },
   { name: "Resources", href: "/resources" },
   { name: "Contact", href: "/contact" },
 ]
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -50,66 +49,60 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 z-50 transition-all duration-300 navbar-slide-in ${
         scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md border-b border-border/50"
+          ? "navbar-glass entrepreneurship-shadow-md"
           : "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
       } border-b border-border`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 sm:p-4 lg:px-8 lg:py-6" aria-label="Global">
-        {/* Logo Section - Optimized for mobile */}
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 group">
             <span className="sr-only">EDIC TCET</span>
-            <div className="flex items-center space-x-2 sm:space-x-3">
-              {/* Mobile-optimized logos */}
-              <div className="flex space-x-1 sm:space-x-2 group-hover:scale-105 transition-transform duration-300">
+            <div className="flex items-center space-x-3">
+              <div className="flex space-x-2 group-hover:scale-110 transition-transform duration-300 entrepreneurship-shadow">
+                {/* Using inline styles for exact size */}
                 <img
                   src="axios.jpeg"
                   alt="AXIOS"
-                  className="rounded-lg object-contain shadow-sm"
-                  style={{ height: "32px", width: "32px" }} // Smaller for mobile
+                  className="rounded-lg object-contain"
+                  style={{ height: "150px", width: "150px" }} // equivalent to h-16 w-16
                 />
                 <img
                   src="edic.jpeg"
                   alt="EDIC"
-                  className="rounded-lg object-contain shadow-sm"
-                  style={{ height: "32px", width: "32px" }}
+                  className="rounded-lg object-contain"
+                  style={{ height: "150px", width: "150px" }}
                 />
               </div>
 
-              {/* Text logo - hidden on very small screens, shown on sm+ */}
-              <div className="hidden xs:block sm:block">
-                <div className="text-sm sm:text-lg lg:text-xl font-extrabold text-foreground group-hover:text-primary transition-colors duration-300">
+              <div className="hidden sm:block">
+                <div className="responsive-text-xl font-extrabold text-foreground group-hover:text-primary transition-colors duration-300">
                   EDIC TCET
                 </div>
-                <div className="text-xs sm:text-sm text-muted-foreground hidden sm:block">Innovation & Entrepreneurship</div>
+                <div className="text-sm text-muted-foreground">Innovation & Entrepreneurship</div>
               </div>
             </div>
           </Link>
         </div>
-
-        {/* Mobile menu button */}
         <div className="flex lg:hidden">
           <Button
             variant="ghost"
             size="sm"
             onClick={() => setMobileMenuOpen(true)}
-            className="p-2 rounded-md hover:bg-primary/10 transition-colors"
-            aria-expanded={mobileMenuOpen}
-            aria-label="Open navigation menu"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 hover:bg-primary/10 transition-colors"
           >
+            <span className="sr-only">Open main menu</span>
             <Menu className="h-6 w-6" aria-hidden="true" />
           </Button>
         </div>
-
-        {/* Desktop navigation */}
-        <div className="hidden lg:flex lg:gap-x-6 xl:gap-x-8">
+        <div className="hidden lg:flex lg:gap-x-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm xl:text-base font-semibold leading-7 text-foreground hover:text-primary transition-all duration-300 relative group py-2"
+              className="responsive-text-md font-semibold leading-7 text-foreground hover:text-primary transition-all duration-300 relative group"
+              style={{ fontSize: "1.125rem" }} // 18px size, bigger than default
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -117,86 +110,59 @@ export default function Navbar() {
           ))}
         </div>
       </nav>
-
-      {/* Mobile menu overlay and panel */}
+      {/* Mobile menu */}
       {mobileMenuOpen && (
-        <>
-          {/* Backdrop */}
-          <div 
-            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm lg:hidden" 
-            onClick={() => setMobileMenuOpen(false)}
-            aria-hidden="true"
-          />
-          
-          {/* Mobile menu panel */}
-          <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-4 py-4 sm:max-w-sm sm:px-6 shadow-xl border-l border-border lg:hidden">
-            {/* Mobile menu header */}
-            <div className="flex items-center justify-between mb-6">
-              <Link 
-                href="/" 
-                className="-m-1.5 p-1.5"
-                onClick={() => setMobileMenuOpen(false)}
-              >
+        <div className="lg:hidden">
+          <div className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
+          <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-sm entrepreneurship-shadow-lg border-l border-border">
+            <div className="flex items-center justify-between">
+              <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">EDIC TCET</span>
                 <div className="flex items-center space-x-3">
+                  {/* Larger logos in mobile menu */}
                   <img
                     src="axios.jpeg"
                     alt="AXIOS"
-                    className="rounded-lg object-contain shadow-sm"
-                    style={{ height: "40px", width: "40px" }}
+                    className="rounded-lg object-contain"
+                    style={{ height: "48px", width: "48px" }}
                   />
                   <img
                     src="edic.jpeg"
                     alt="EDIC"
-                    className="rounded-lg object-contain shadow-sm"
-                    style={{ height: "40px", width: "40px" }}
+                    className="rounded-lg object-contain"
+                    style={{ height: "48px", width: "48px" }}
                   />
-                  <span className="text-lg font-bold text-foreground">EDIC TCET</span>
+                  <span className="text-xl font-bold text-foreground">EDIC TCET</span>
                 </div>
               </Link>
-              
               <Button
                 variant="ghost"
                 size="sm"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-md"
-                aria-label="Close navigation menu"
+                className="-m-2.5 rounded-md p-2.5"
               >
+                <span className="sr-only">Close menu</span>
                 <X className="h-6 w-6" aria-hidden="true" />
               </Button>
             </div>
-
-            {/* Mobile navigation links */}
-            <div className="flow-root">
-              <div className="divide-y divide-border">
-                <div className="space-y-1 py-4">
+            <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide-border">
+                <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="flex items-center px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-lg font-medium leading-7 text-foreground hover:bg-muted"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </Link>
                   ))}
                 </div>
-                
-                {/* Additional mobile menu content */}
-                <div className="py-4">
-                  <div className="px-3 py-2">
-                    <p className="text-xs text-muted-foreground">
-                      Innovation & Entrepreneurship Cell
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      Thakur College of Engineering and Technology
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-        </>
+        </div>
       )}
     </header>
   )
