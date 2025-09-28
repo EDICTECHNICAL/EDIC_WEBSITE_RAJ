@@ -240,3 +240,21 @@
     background-position: 0 0, 50px 50px;
   }
 }
+
+/* Tailwind base, components, utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animate CSS package */
+@import "tw-animate-css";
+
+/* Your custom global styles */
+body {
+  @apply bg-white text-black font-sans;
+}
+
+/* Example custom class */
+.btn {
+  @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition;
+}
