@@ -81,33 +81,7 @@ export default function Navbar() {
         </nav>
       </header>
 
-      {/* Mobile Bottom Navigation Bar */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-t border-border shadow-lg">
-        <div className="grid grid-cols-4 gap-1 px-2 py-2">
-          {navigation.slice(0, 4).map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="flex flex-col items-center justify-center py-2 px-1 text-xs font-medium text-muted-foreground hover:text-primary transition-colors duration-200 rounded-lg hover:bg-primary/5"
-            >
-              <span className="truncate w-full text-center leading-tight">{item.name}</span>
-            </Link>
-          ))}
-        </div>
-        <div className="grid grid-cols-3 gap-1 px-2 pb-2">
-          {navigation.slice(4).map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="flex flex-col items-center justify-center py-2 px-1 text-xs font-medium text-muted-foreground hover:text-primary transition-colors duration-200 rounded-lg hover:bg-primary/5"
-            >
-              <span className="truncate w-full text-center leading-tight">{item.name}</span>
-            </Link>
-          ))}
-        </div>
-      </div>
-
-      {/* Mobile Horizontal Scrollable Navigation (Alternative Option) */}
+      {/* Mobile Horizontal Scrollable Navigation */}
       <div className="lg:hidden sticky top-[73px] z-40 bg-background/95 backdrop-blur-sm border-b border-border/50 shadow-sm">
         <div className="flex overflow-x-auto scrollbar-hide px-4 py-3 space-x-6">
           {navigation.map((item) => (
@@ -122,13 +96,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Add bottom padding to body content to account for bottom nav */}
       <style jsx global>{`
-        @media (max-width: 1024px) {
-          body {
-            padding-bottom: 80px;
-          }
-        }
         .scrollbar-hide {
           -ms-overflow-style: none;
           scrollbar-width: none;
