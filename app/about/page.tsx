@@ -219,27 +219,7 @@ export default function AboutPage() {
 
 					<div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
 						{/* Sukruti Ma'am Card */}
-						<Card className="border border-primary/20 shadow-md hover:shadow-lg hover:border-primary/40 transition-all duration-300">
-							<CardContent className="p-8 text-center">
-								<div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden bg-primary/10">
-									<img
-										src="sukruti.jpg" // <-- replace with actual image path
-										alt="Sukruti Ma'am"
-										className="w-full h-full object-cover"
-									/>
-								</div>
-								<h3 className="text-xl font-bold text-foreground">
-									Sukruti Ma'am
-								</h3>
-								<p className="text-primary font-medium mb-4">
-									Faculty In-Charge
-								</p>
-								<p className="text-muted-foreground text-sm leading-relaxed">
-									Dedicated to nurturing entrepreneurial skills and innovation
-									among students.
-								</p>
-							</CardContent>
-						</Card>
+						
 
 						{/* Vinit Sir Card */}
 						<Card className="border border-primary/20 shadow-md hover:shadow-lg hover:border-primary/40 transition-all duration-300">
@@ -252,14 +232,35 @@ export default function AboutPage() {
 									/>
 								</div>
 								<h3 className="text-xl font-bold text-foreground">
-									Vinit Sir
+									Dr. Vinitkumar Dongre
 								</h3>
 								<p className="text-primary font-medium mb-4">
-									Faculty Mentor
+									Dean R&D, Faculty Mentor
 								</p>
 								<p className="text-muted-foreground text-sm leading-relaxed">
 									Passionate about guiding students in business strategy and
 									leadership.
+								</p>
+							</CardContent>
+						</Card>
+						<Card className="border border-primary/20 shadow-md hover:shadow-lg hover:border-primary/40 transition-all duration-300">
+							<CardContent className="p-8 text-center">
+								<div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden bg-primary/10">
+									<img
+										src="sukruti.jpg" // <-- replace with actual image path
+										alt="Sukruti mam"
+										className="w-full h-full object-cover"
+									/>
+								</div>
+								<h3 className="text-xl font-bold text-foreground">
+									Dr. Sukruti Kaulgud
+								</h3>
+								<p className="text-primary font-medium mb-4">
+									Faculty In-Charge TCET EDIC
+								</p>
+								<p className="text-muted-foreground text-sm leading-relaxed">
+									Dedicated to nurturing entrepreneurial skills and innovation
+									among students.
 								</p>
 							</CardContent>
 						</Card>
