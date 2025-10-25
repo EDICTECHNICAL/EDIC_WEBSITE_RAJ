@@ -72,20 +72,9 @@ export default function TeamPage() {
                     />
                   </div>
                   <h3 className="responsive-text-lg font-semibold text-foreground">{faculty.name}</h3>
-                  <Badge variant="outline" className="mt-2 mb-4 border-primary/30 text-primary bg-primary/5">
+                  <Badge variant="outline" className="mt-2 border-primary/30 text-primary bg-primary/5">
                     {faculty.branch}
                   </Badge>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    asChild
-                    className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent entrepreneurship-shadow border-primary/30 text-primary hover:border-primary"
-                  >
-                    <Link href={faculty.linkedin} target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="h-4 w-4 mr-2" />
-                      Connect
-                    </Link>
-                  </Button>
                 </CardContent>
               </Card>
             ))}

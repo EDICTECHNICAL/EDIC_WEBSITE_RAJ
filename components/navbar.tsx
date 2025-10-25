@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { useSession, signIn, signOut } from "next-auth/react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, User, LogOut } from "lucide-react"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -16,6 +17,7 @@ const navigation = [
 ]
 
 export default function Navbar() {
+  const { data: session, status } = useSession()
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -72,17 +74,58 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation - Hidden on mobile */}
-          <div className="hidden lg:flex lg:gap-x-6 xl:gap-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-sm xl:text-base font-semibold leading-7 text-foreground hover:text-primary transition-all duration-300 relative group py-2"
-              >
-                {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-            ))}
+          <div className="hidden lg:flex lg:gap-x-6 xl:gap-x-8 lg:items-center">
+            {navigation.map((item) => {
+              // Show protected routes only to authenticated users
+              if ((item.href === "/students" || item.href === "/resources") && !session?.user?.email?.endsWith("@tcetmumbai.in")) {
+                return null
+              }
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-sm xl:text-base font-semibold leading-7 text-foreground hover:text-primary transition-all duration-300 relative group py-2"
+                >
+                  {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              )
+            })}
+            
+            {/* Authentication Button */}
+            <div className="ml-4">
+              {status === "loading" ? (
+                <div className="h-9 w-20 bg-muted animate-pulse rounded-md" />
+              ) : session?.user?.email?.endsWith("@tcetmumbai.in") ? (
+                <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 px-3 py-1.5 bg-primary/10 rounded-md">
+                    <User className="h-4 w-4 text-primary" />
+                    <span className="text-sm font-medium text-primary">
+                      {session.user.name?.split(" ")[0] || "Student"}
+                    </span>
+                  </div>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => signOut()}
+                    className="flex items-center gap-1"
+                  >
+                    <LogOut className="h-4 w-4" />
+                    Sign Out
+                  </Button>
+                </div>
+              ) : (
+                <Button
+                  onClick={() => signIn()}
+                  variant="outline"
+                  size="sm"
+                  className="flex items-center gap-2"
+                >
+                  <User className="h-4 w-4" />
+                  Student Login
+                </Button>
+              )}
+            </div>
           </div>
         </nav>
       </header>
@@ -90,15 +133,44 @@ export default function Navbar() {
       {/* Mobile Horizontal Scrollable Navigation */}
       <div className="lg:hidden sticky top-[73px] z-40 bg-background/95 backdrop-blur-sm border-b border-border/50 shadow-sm">
         <div className="flex overflow-x-auto scrollbar-hide px-4 py-3 space-x-6">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="flex-shrink-0 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 whitespace-nowrap py-1 px-2 rounded-md hover:bg-primary/5"
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navigation.map((item) => {
+            // Show protected routes only to authenticated users on mobile too
+            if ((item.href === "/students" || item.href === "/resources") && !session?.user?.email?.endsWith("@tcetmumbai.in")) {
+              return null
+            }
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="flex-shrink-0 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 whitespace-nowrap py-1 px-2 rounded-md hover:bg-primary/5"
+              >
+                {item.name}
+              </Link>
+            )
+          })}
+          
+          {/* Mobile Authentication */}
+          {status !== "loading" && (
+            <div className="flex-shrink-0">
+              {session?.user?.email?.endsWith("@tcetmumbai.in") ? (
+                <button
+                  onClick={() => signOut()}
+                  className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 whitespace-nowrap py-1 px-2 rounded-md hover:bg-primary/5"
+                >
+                  <LogOut className="h-3 w-3" />
+                  Sign Out
+                </button>
+              ) : (
+                <button
+                  onClick={() => signIn()}
+                  className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 whitespace-nowrap py-1 px-2 rounded-md hover:bg-primary/5"
+                >
+                  <User className="h-3 w-3" />
+                  Login
+                </button>
+              )}
+            </div>
+          )}
         </div>
       </div>
 

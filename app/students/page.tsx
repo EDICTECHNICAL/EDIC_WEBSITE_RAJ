@@ -1,9 +1,12 @@
+"use client"
+
+import { useSession } from "next-auth/react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, FileText, Lightbulb, Users, Wrench, Linkedin, Building } from "lucide-react"
+import { ExternalLink, FileText, Lightbulb, Users, Wrench, Linkedin, Building, Shield, Mail, Calendar, BookOpen } from "lucide-react"
 import Link from "next/link"
 import alumniData from "@/data/alumni.json"
 
@@ -43,28 +46,108 @@ const forms = [
   },
 ]
 
+const studentFeatures = [
+  {
+    icon: BookOpen,
+    title: "Exclusive Learning Materials",
+    description: "Access curated entrepreneurship courses, case studies, and industry reports available only to TCET students."
+  },
+  {
+    icon: Calendar,
+    title: "Priority Event Registration",
+    description: "Get early access to workshops, seminars, and networking events with guaranteed seats for registered students."
+  },
+  {
+    icon: Users,
+    title: "Mentor Connect Program",
+    description: "Direct access to our network of successful alumni and industry mentors for personalized guidance."
+  },
+  {
+    icon: Wrench,
+    title: "Innovation Lab Access",
+    description: "24/7 access to our state-of-the-art innovation labs, 3D printers, and prototyping facilities."
+  }
+]
+
 export default function StudentsPage() {
+  const { data: session, status } = useSession()
+  
+  if (status === "loading") {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent mx-auto mb-4" />
+          <p className="text-muted-foreground">Loading student portal...</p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+
+      {/* Welcome Section for Authenticated Students */}
+      {session?.user?.email?.endsWith("@tcetmumbai.in") && (
+        <section className="py-6 bg-primary/5 border-b border-primary/10">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="flex items-center gap-3">
+              <Shield className="h-5 w-5 text-primary" />
+              <p className="text-sm font-medium text-primary">
+                Welcome back, {session.user.name?.split(" ")[0]}! You're logged in with {session.user.email}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <Badge variant="secondary" className="mb-4">
-              Student's Corner
+              {session?.user?.email?.endsWith("@tcetmumbai.in") ? "TCET Student Portal" : "Student's Corner"}
             </Badge>
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl text-balance">
-              Your Gateway to Innovation
+              {session?.user?.email?.endsWith("@tcetmumbai.in") 
+                ? "Your Gateway to Innovation" 
+                : "Student Access Required"}
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
-              Access exclusive resources, connect with mentors, submit your ideas, and join a thriving community of
-              student entrepreneurs and innovators.
+              {session?.user?.email?.endsWith("@tcetmumbai.in")
+                ? "Access exclusive resources, connect with mentors, submit your ideas, and join a thriving community of student entrepreneurs and innovators."
+                : "Sign in with your TCET email (@tcetmumbai.in) to access exclusive student resources and features."}
             </p>
           </div>
         </div>
       </section>
+
+      {/* Student-Only Features Section */}
+      {session?.user?.email?.endsWith("@tcetmumbai.in") && (
+        <section className="py-24 sm:py-32 bg-muted/30">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Exclusive Student Benefits</h2>
+              <p className="mt-4 text-lg leading-8 text-muted-foreground">
+                These resources and services are available exclusively to authenticated TCET students
+              </p>
+            </div>
+            <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {studentFeatures.map((feature, index) => (
+                <Card key={index} className="border-primary/20 bg-background/50 backdrop-blur-sm">
+                  <CardContent className="p-6">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary mb-4">
+                      <feature.icon className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
+                    <p className="text-sm text-muted-foreground text-pretty">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Forms Section */}
       <section className="py-24 sm:py-32">

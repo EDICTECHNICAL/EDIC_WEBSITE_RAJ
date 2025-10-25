@@ -1,18 +1,64 @@
 "use client"
 
 import { useState, useMemo } from "react"
+import { useSession } from "next-auth/react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Search, Filter, Wrench, CheckCircle, Clock } from "lucide-react"
+import { Search, Filter, Wrench, CheckCircle, Clock, Shield, Lock, BookOpen, Download, FileText } from "lucide-react"
 import resourcesData from "@/data/resources.json"
+import Link from "next/link"
+
+const exclusiveResources = [
+  {
+    id: 1,
+    title: "Entrepreneurship Masterclass Series",
+    description: "20+ hours of recorded sessions with industry leaders and successful entrepreneurs.",
+    type: "Video Course",
+    icon: BookOpen
+  },
+  {
+    id: 2,
+    title: "Business Plan Templates",
+    description: "Professional templates used by successful TCET alumni for their startups.",
+    type: "Documents",
+    icon: FileText
+  },
+  {
+    id: 3,
+    title: "Industry Reports & Case Studies",
+    description: "Latest market research and startup case studies from various industries.",
+    type: "Research",
+    icon: Download
+  },
+  {
+    id: 4,
+    title: "Mentor Connect Directory",
+    description: "Direct contact information and scheduling access to 50+ industry mentors.",
+    type: "Directory",
+    icon: Shield
+  }
+]
 
 export default function ResourcesPage() {
+  const { data: session, status } = useSession()
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedLab, setSelectedLab] = useState("all")
+
+  if (status === "loading") {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent mx-auto mb-4" />
+          <p className="text-muted-foreground">Loading resources...</p>
+        </div>
+      </div>
+    )
+  }
 
   // Get unique labs for filter
   const labs = useMemo(() => {
@@ -60,23 +106,81 @@ export default function ResourcesPage() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
+      {/* Welcome Section for Authenticated Students */}
+      {session?.user?.email?.endsWith("@tcetmumbai.in") && (
+        <section className="py-6 bg-primary/5 border-b border-primary/10">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="flex items-center gap-3">
+              <Shield className="h-5 w-5 text-primary" />
+              <p className="text-sm font-medium text-primary">
+                Welcome back, {session.user.name?.split(" ")[0]}! You have full access to all resources.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <Badge variant="secondary" className="mb-4">
-              Lab Resources
+              {session?.user?.email?.endsWith("@tcetmumbai.in") ? "TCET Student Resources" : "Lab Resources"}
             </Badge>
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl text-balance">
-              State-of-the-Art Facilities
+              {session?.user?.email?.endsWith("@tcetmumbai.in") 
+                ? "Complete Resource Access" 
+                : "Limited Resource Access"}
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
-              Access cutting-edge equipment and resources across our specialized labs to bring your innovative ideas to
-              life.
+              {session?.user?.email?.endsWith("@tcetmumbai.in")
+                ? "Access cutting-edge equipment and exclusive learning materials across our specialized labs to bring your innovative ideas to life."
+                : "Sign in with your TCET email (@tcetmumbai.in) to access all resources including restricted materials and lab equipment."}
             </p>
           </div>
         </div>
       </section>
+
+      {/* Exclusive Resources Section - Only visible to authenticated students */}
+      {session?.user?.email?.endsWith("@tcetmumbai.in") && (
+        <section className="py-16 bg-gradient-to-br from-primary/5 to-background">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center mb-12">
+              <Badge variant="outline" className="mb-3 border-primary/30 text-primary">
+                <Lock className="h-3 w-3 mr-1" />
+                TCET Students Only
+              </Badge>
+              <h2 className="text-3xl font-bold tracking-tight text-foreground">Exclusive Learning Resources</h2>
+              <p className="mt-4 text-muted-foreground">
+                Premium content available only to authenticated TCET students
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {exclusiveResources.map((resource) => (
+                <Card key={resource.id} className="border-primary/20 shadow-md hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary mb-4">
+                      <resource.icon className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <div className="flex items-center space-x-2 mb-2">
+                      <h3 className="text-lg font-semibold text-foreground">{resource.title}</h3>
+                      <Badge variant="outline" className="text-xs">
+                        {resource.type}
+                      </Badge>
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-4 text-pretty">{resource.description}</p>
+                    <Button variant="outline" size="sm" className="w-full">
+                      <Download className="h-4 w-4 mr-2" />
+                      Access Now
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Search and Filter Section */}
       <section className="py-12 bg-muted/30">
