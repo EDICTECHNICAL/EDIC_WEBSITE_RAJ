@@ -12,7 +12,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 ## Deployment
 
-Your project is live at:
+Your project is live at:  https://edic-new.vercel.app/
 
 **[https://vercel.com/tcet-edics-projects/v0-edic-tcet-website]((https://edic-new.vercel.app/))**
 
